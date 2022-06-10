@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage Dealer Program</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="loadDisplay()">
+    <header>
+      <h1>Local Storage Dealer Program</h1>
+    </header>
+    <section class="hiddenDisplay"></section>
+    <section class="display">
+      Log a VARIABLE and a VALUE to this console.
+    </section>
+    <input
+      type="text"
+      class="inputVariable"
+      value="VARIABLE"
+      onclick="select(this)"
+    />
+    <input
+      type="text"
+      class="inputValue"
+      value="VALUE"
+      onclick="select(this)"
+    />
+    <button type="button" class="storeBtn">Store</button><br /><br />
+    <button type="button" class="clearBtn">Clear Storage</button>
+
+    <script src="index-script.js"></script>
+  </body>
+</html>
